@@ -1,0 +1,2 @@
+# Kins
+Türkçe skript eklentisi!
