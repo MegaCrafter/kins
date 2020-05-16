@@ -1,2 +1,2 @@
-# kins
+# Kins
 Türkçe skript eklentisi!
