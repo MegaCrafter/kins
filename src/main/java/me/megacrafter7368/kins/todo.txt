@@ -1,0 +1,21 @@
+Instruction sistemini düzenle BİTTİ
+
+Geçici değişkenleri entegre et. (Değişken sistemini optimize et ve hata düzenle)
+-> Kalıcı değişkenler hem yml'ye hem de hashmap'e kaydedilmeli. (Veri çekerkenki zamanı optimize etmek için)
+-> Geçici değişkenler execute'un içinde bir hashmap olarak durmalı. (Veya parametre olarak verilebilir.)
+(KinsVariables)
+
+ErrorThrower line kontrolü ekle.
+
+Function şeysini ekle.
+
+Syntax olayını ekle.
+
+oyuncu -> oyuncunun canı
+oyuncu -> oyuncunun tp değeri (xp)
+oyuncu -> oyuncunun maksimumu canı
+
+HealthSyntax
+
+
+

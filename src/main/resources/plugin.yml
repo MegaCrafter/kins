@@ -1,0 +1,7 @@
+name: Kins
+version: 1.0
+description: Kins
+main: me.megacrafter7368.kins.KinsMain
+commands:
+  kins:
+    description: Kins Main Command

@@ -1,0 +1,17 @@
+--Effect eklemek için:
+Bir sınıf aç. Bu sınıf Effect sınıfını extend etmeli. Extend ettikten sonra gerekli metodları implement et.
+
+Constructor'daki super(indicator) içine efektin neyle bittiğini yaz.
+Mesela mesaj gönderme eventi için super("mesajı gönder") yazmalıyız.
+
+KinsRegistration içindeki registerAllEffects'in içinde açtığın sınıfı örnekler gibi tanımla.
+
+--Condition eklemek için:
+Bir sınıf aç. Bu sınıf Condition sınıfını extend etmeli. Extend ettikten sonra gerekli metodları impelement et.
+
+KinsRegistration içindeki registerAllConditions'un içinde Effect gibi açtığın sınıfı tanımla.
+
+--Event eklemek için:
+Bir sınıf aç. Bu sınıf Event sınıfını extend etmeli. Extend ettikten sonra gerekli metodları implement et.
+
+Event.java içindeki static bloğunda açtığın sınıfı register etmelisin ki sunucu açıldığında yüklenebilsin.

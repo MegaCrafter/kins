@@ -1,0 +1,29 @@
+komut /sns <oyuncu>:
+    yetki: sns.kullan
+    yetki mesajı: &cBu komutu kullanma yetkiniz yok!
+    diğer: sbs,sonnovem
+    tetikle:
+        değer-1'e "&cSNS \"Mesajı\" aldınız!" mesajı gönder
+        gönderici'e "&a%değer-1% oyuncusuna SNS Mesajı gönderdiniz!" mesajı gönder
+        {sns.%değer-1%}'i doğruya ayarla
+
+komut /itemver <oyuncu> <item> <sayı> [<yazı>]:
+    yetki: item.ver
+    yetki mesajı: &cBu komutu kullanma yetkiniz yok!
+    diğer: iv,giveitem
+    tetikle:
+        eğer {sns.%oyuncu%} değeri doğru ise:
+            eğer değer-4 ayarlı ise:
+                değer-1'e değer-3 tane değer-4 isimli değer-2 ver
+            değilse:
+                değer-1'e değer-3 tane değer-2 ver
+            göndericiye "&aItem başarıyla verildi!" mesajı gönder
+            değer-1'e "&aSNS Hediyesi aldınız!" mesajı gönder
+            {sns.%değer-1%}'i sil
+        değilse:
+            göndericiye "&cSNS Mesajı almamışsınız!" mesajı gönder
+
+sohbete mesaj yazılınca:
+    mesaj değeri "ben" ve {sns.%oyuncu%} değeri doğru değil ise:
+        iptal et
+        oyuncuya "&cSNS Mesajı almadan bunu yazamazsınız!" mesajı gönder

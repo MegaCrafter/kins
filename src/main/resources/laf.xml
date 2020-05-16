@@ -1,0 +1,68 @@
+<!--<synth>-->
+    <!--<style id="buttonStyle">-->
+        <!--<insets top="10" left="10" right="10" bottom="10"/>-->
+        <!--<opaque value="true"/>-->
+
+        <!--<font name="Roboto" size="22"/>-->
+
+        <!--<state>-->
+            <!--<color value="#353535" type="FOREGROUND"/>-->
+            <!--<color value="#00d2e1" type="BACKGROUND"/>-->
+        <!--</state>-->
+        <!--<state value="MOUSE_OVER">-->
+            <!--<color value="#00c0d0" type="BACKGROUND"/>-->
+        <!--</state>-->
+    <!--</style>-->
+    <!--<bind style="buttonStyle" type="REGION" key="Button"/>-->
+<!--</synth>-->
+
+<synth>
+    <style id="backingStyle">
+        <opaque value="TRUE"/>
+        <font name="Century Gothic" size="12"/>
+        <state>
+            <!-- Provide default colors -->
+            <color value="#202020" type="BACKGROUND"/>
+            <color value="#00d2e1" type="FOREGROUND"/>
+        </state>
+    </style>
+    <bind style="backingStyle" type="REGION" key=".*"/>
+
+    <style id="buttonStyle">
+        <opaque value="TRUE"/>
+        <font name="Century Gothic" size="16"/>
+        <insets top="15" left="20" right="20" bottom="15"/>
+        <state>
+            <color value="#00d2e1" type="FOREGROUND"/>
+            <color value="#404040" type="BACKGROUND"/>
+        </state>
+        <state value="MOUSE_OVER">
+            <color value="#505050" type="BACKGROUND"/>
+        </state>
+        <state value="DISABLED">
+            <color value="#7d7d7d" type="BACKGROUND"/>
+        </state>
+    </style>
+    <bind style="buttonStyle" type="REGION" key="button"/>
+
+    <style id="LitBut" clone="buttonStyle">
+        <font name="Century Gothic" size="13"/>
+    </style>
+    <bind style="LitBut" type="name" key="litbut.*"/>
+
+    <style id="darkerback">
+        <state>
+            <opaque value="TRUE"/>
+            <color value="#262626" type="BACKGROUND"/>
+        </state>
+    </style>
+    <bind style="darkerback" type="REGION" key="textfield"/>
+    <bind style="darkerback" type="REGION" key="passwordfield"/>
+
+    <style id="padding" clone="darkerback">
+        <insets top="5" left="5" right="5" bottom="5"/>
+        <font name="Century Gothic" size="13"/>
+    </style>
+    <bind style="padding" type="REGION" key="editorpane"/>
+    <bind style="padding" type="REGION" key="textarea"/>
+</synth>
